@@ -3,14 +3,14 @@ import Button from '@mui/material/Button';
 import ModifyPdf from '../../modifyPdf.js';
 import './button.css';
 
-export default function SubmitButton() {
+export default function SubmitButton({ onClick }) {
     return  (
     <div>
     <Button 
         variant="contained" 
         size="large" 
         className='button'
-        onClick={() => ModifyPdf()}
+        onClick={onClick}
         >Update PDF</Button>
     </div>
     );

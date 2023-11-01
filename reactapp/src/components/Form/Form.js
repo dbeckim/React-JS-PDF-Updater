@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import SubmitButton from '../Button/Button';
+import ModifyPdf from '../../modifyPdf';
 //import './form.css';
 
 export default function Form() {
@@ -14,7 +16,11 @@ export default function Form() {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-    console.log('Input Value:', inputValue)
+
+  const handleClick = async () => {
+    await ModifyPdf(inputValue);
+    //console.log('Input Value:', inputValue)
+  }
 
     return  (
     <Box
@@ -33,6 +39,7 @@ export default function Form() {
           value={inputValue}
           onChange={handleInputChange}
           />
+        <SubmitButton onClick={handleClick} /> 
       </div>
     </Box>
     
