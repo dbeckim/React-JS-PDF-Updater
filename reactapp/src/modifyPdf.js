@@ -11,7 +11,7 @@ import {PDFDocument} from 'pdf-lib';
     const pages = pdfDoc.getPages()
     const firstPage = pages[0]
     const { width, height } = firstPage.getSize()
-    firstPage.drawText('boob', {
+    firstPage.drawText('test', {
       x: width / 3 + 77,
       y: height / 2 + 127,
       size: 8,
