@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import ModifyPdf from '../../modifyPdf.js';
 import './button.css';
 
+// Simple Material UI button.
+// onClick prop triggers handleClick() back in Form.js to run the modifyPdf func
 export default function SubmitButton({ onClick }) {
     return  (
     <div>
