@@ -1,6 +1,6 @@
 # CH - React/JS PDF Updater!
 
-Devin Beckim - last updated 11/2/23.    First React JS app created for Certificate Hero take home project.
+Devin Beckim - last updated 11/2/23.    First React JS app created for job application take home project.
 
 Base app was created using Node Package Runner:
 ```
